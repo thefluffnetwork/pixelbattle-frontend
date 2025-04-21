@@ -36,7 +36,7 @@
     "@preact/preset-vite": "^2.9.0",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^22.1.0",
-    "eslint": "^9.8.0",
+    "eslint": "^8.57.1",
     "eslint-config-preact": "^1.4.0",
     "terser": "^5.31.5",
     "typescript": "^5.5.4",
