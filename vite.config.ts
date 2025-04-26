@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import preact from '@preact/preset-vite';
 import { resolve } from 'path';
+import { runtimeEnv } from 'vite-plugin-runtime';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -95,6 +96,10 @@ export default defineConfig({
                     }
                 ]
             }
+        }),
+        runtimeEnv({
+            envsubstTemplate: true,
+            injectHtml: true,
         })
     ],
     build: {

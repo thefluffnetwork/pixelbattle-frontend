@@ -40,8 +40,8 @@ export const config = {
         minLevelPx: 5
     },
     discord: {
-        clientId: (import.meta.env.VITE_DISCORD_BOT_ID as string)!,
-        redirectUri: (import.meta.env.VITE_DISCORD_BOT_REDIRECT as string)!,
+        clientId: (import.meta.env.DISCORD_BOT_ID as string)!,
+        redirectUri: (import.meta.env.DISCORD_BOT_REDIRECT as string)!,
         scope: ["identify", "guilds.join", "email"]
     },
     hover: {
@@ -49,7 +49,7 @@ export const config = {
         scale: 1.2
     },
     url: {
-        api: (import.meta.env.VITE_BACKEND as string)!,
+        api: (import.meta.env.BACKEND as string)!,
     },
     snow: {
         size: 2,
