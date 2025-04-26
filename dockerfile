@@ -18,6 +18,8 @@ COPY . .
 
 COPY --from=install /app/node_modules node_modules
 
+COPY .env.example .env
+
 RUN npm run build
 
 
