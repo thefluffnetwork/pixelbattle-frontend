@@ -14,11 +14,11 @@ FROM node-base AS build
 
 WORKDIR /app
 
-COPY . .
-
 COPY --from=install /app/node_modules node_modules
 
-COPY .env.example .env
+COPY . .
+
+RUN cp .env.example .env
 
 RUN npm run build
 

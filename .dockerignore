@@ -4,6 +4,7 @@
 /docs
 .env
 .env.*
+!.env.example
 dist
 tsconfig.tsbuildinfo
 LICENSE
