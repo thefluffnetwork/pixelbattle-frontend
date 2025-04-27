@@ -51,8 +51,8 @@ export function TitleBar() {
 							<Param label="Онлайн" value={info.info.value.online.toString()} />
 						</div>
 						<div className={styles.projectInfo}>
-							<a href="https://thefluffnetwork.ru"><p>Наш дискорд сервер <Icon icon="discord" /></p></a>
-							<p>Основано на проекте <a href="https://github.com/pixelate-it">Pixelate It!</a></p>
+							<a target="_blank" rel="noreferrer" href="https://thefluffnetwork.ru"><p>Наш дискорд сервер <Icon icon="discord" /></p></a>
+							<p>Основано на проекте <a target="_blank" rel="noreferrer" href="https://github.com/pixelate-it">Pixelate It!</a></p>
 						</div>
 					</div>
 				)}
