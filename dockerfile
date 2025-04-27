@@ -29,4 +29,6 @@ WORKDIR /usr/share/nginx
 
 COPY --from=build /app/dist html
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 CMD ["sh", "-c", "envsubst < html/env.template.js > html/env.js && nginx -g 'daemon off;'"]
