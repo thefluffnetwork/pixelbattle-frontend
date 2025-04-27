@@ -42,7 +42,7 @@ export const config = {
     discord: {
         clientId: (import.meta.env.DISCORD_BOT_ID as string)!,
         redirectUri: (import.meta.env.DISCORD_BOT_REDIRECT as string)!,
-        scope: ["identify", "guilds.join", "email"]
+        scope: ["identify", "email"]
     },
     hover: {
         outlineSize: 0.1,
