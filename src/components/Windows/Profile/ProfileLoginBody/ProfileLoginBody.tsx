@@ -6,7 +6,6 @@ import { config } from "../../../../config";
 
 export function ProfileLoginBody() {
     const agreement = useSignal({
-        terms: false,
         rules: false
     })
 
@@ -16,16 +15,9 @@ export function ProfileLoginBody() {
     return <div class={styles.wrapper}>
         <div class={styles.checkboxes}>
             <Checkbox
-                name="terms"
-                onChange={(val) => {
-                    agreement.value = {...agreement.value, terms: val }
-                }}>
-                Я согласен с <a href={config.media.help[0] + "/legal/privacy"} target="_blank">Политикой конфиденциальности</a> и <a href={config.media.help[0] + "/legal/terms"} target="_blank">Условиями использования</a>
-            </Checkbox>
-            <Checkbox
                 name="rules"
                 onChange={(val) => { agreement.value = { ...agreement.value, rules: val } }}>
-                Я согласен с <a href={config.media.help[0] + "/rules"} target="_blank">Правилами PixelBattle</a>
+                Я согласен с правилами PixelBattle (которые мы пока не придумали)
             </Checkbox>
         </div>
 

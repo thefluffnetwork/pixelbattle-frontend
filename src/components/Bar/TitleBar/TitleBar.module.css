@@ -52,6 +52,14 @@
 	justify-content: flex-start;
 }
 
+.projectInfo {
+	padding-top: 10px;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	font-size: smaller;
+}
+
 .media {
 	display: flex;
 	flex-wrap: wrap;

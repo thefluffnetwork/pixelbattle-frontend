@@ -50,16 +50,9 @@ export function TitleBar() {
 							<Param label="Размер" value={place.image.value.size.x + "x" + place.image.value.size.y} />
 							<Param label="Онлайн" value={info.info.value.online.toString()} />
 						</div>
-						<div className={styles.icons}>
-							<div className={styles.media}>
-								{Object.entries(config.media).map(([name, url]) => (
-									<a href={url[0]} target="_blank" rel="noopener noreferrer" key={name}>
-										<Icon icon={name} alt={url[1]} size={35} viewBoxSize={256} />
-										{/* <img src={`/images/icons/${name}.svg`} alt={name} width={35} height={35}/> */}
-									</a>
-								))}
-							</div>
-							<Snowflake />
+						<div className={styles.projectInfo}>
+							<a href="https://thefluffnetwork.ru"><p>Наш дискорд сервер <Icon icon="discord" /></p></a>
+							<p>Основано на проекте <a href="https://github.com/pixelate-it">Pixelate It!</a></p>
 						</div>
 					</div>
 				)}
