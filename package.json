@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 9001",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "tsc --noEmit && biome check ",
+    "lint:fix": "biome check --write"
   },
   "license": "GPL-3.0-only",
   "version": "4.3.0",
@@ -33,13 +35,14 @@
     "wouter-preact": "^3.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@preact/preset-vite": "^2.9.0",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^22.1.0",
     "eslint": "^8.57.1",
     "eslint-config-preact": "^1.4.0",
     "terser": "^5.31.5",
-    "typescript": "^5.5.4",
+    "typescript": "~5.8.3",
     "vite": "^5.4.0",
     "vite-plugin-pwa": "^0.20.1",
     "vite-plugin-runtime": "^1.4.0"
