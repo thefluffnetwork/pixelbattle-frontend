@@ -1,20 +1,20 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .checkboxes {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .checkboxes a {
-    color: var(--white);
+  color: var(--white);
 }
 
 .checkboxes a:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }

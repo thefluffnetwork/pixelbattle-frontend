@@ -1,12 +1,12 @@
-import { createContext } from "preact";
-import { signal } from "@preact/signals";
-import { AppColor } from "../classes/AppColor";
+import { signal } from "@preact/signals"
+import { createContext } from "preact"
+import { AppColor } from "../classes/AppColor"
 
 export const CursorManager = {
-    color: signal(new AppColor('#FFFFFF')),
-    setColor(color: AppColor) {
-        CursorManager.color.value = color;
-    }
+  color: signal(new AppColor("#FFFFFF")),
+  setColor(color: AppColor) {
+    CursorManager.color.value = color
+  },
 }
 
-export const CursorContext = createContext({} as typeof CursorManager);
+export const CursorContext = createContext({} as typeof CursorManager)

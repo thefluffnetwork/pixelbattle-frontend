@@ -1,64 +1,64 @@
-import { AppColor } from "./classes/AppColor";
+import { AppColor } from "./classes/AppColor"
 
 export const config = {
-    defaults: {
-        colors: {
-            background: new AppColor("#282828"),
-            palette: {
-                colors: [
-                    new AppColor("#ff0000"),
-                    new AppColor("#00ff00"),
-                    new AppColor("#0000ff"),
-                    new AppColor("#000000"),
-                    new AppColor("#ffffff"),
-                ],
-                selected: new AppColor("#ffffff"), // Default selected color
-            }
-        },
-        settings: {
-            enableSnow: true
-        }
+  defaults: {
+    colors: {
+      background: new AppColor("#282828"),
+      palette: {
+        colors: [
+          new AppColor("#ff0000"),
+          new AppColor("#00ff00"),
+          new AppColor("#0000ff"),
+          new AppColor("#000000"),
+          new AppColor("#ffffff"),
+        ],
+        selected: new AppColor("#ffffff"), // Default selected color
+      },
     },
-    time: {
-        update: {
-            tags: 30000,
-            info: 30000,
-        },
-        ws: 2000, // Websocket reconnect time
-        shake: 200,
-        notificationRemoved: 3000,
-        pixelInfo: 500,
+    settings: {
+      enableSnow: true,
     },
-    cooldown: {
-        offset: 50,
-        staff: 50,  
+  },
+  time: {
+    update: {
+      tags: 30000,
+      info: 30000,
     },
-    shakeAmount: 0.1,
-    zoom: {
-        defaultLevel: 0.25,
-        maxLevel: 3,
-        minLevelPx: 5
-    },
-    discord: {
-        clientId: (import.meta.env.DISCORD_BOT_ID as string)!,
-        redirectUri: (import.meta.env.DISCORD_BOT_REDIRECT as string)!,
-        scope: ["identify", "email"]
-    },
-    hover: {
-        outlineSize: 0.1,
-        scale: 1.2
-    },
-    url: {
-        api: (import.meta.env.BACKEND as string)!,
-    },
-    snow: {
-        size: 2,
-        amount: 100,
-    },
-    overlay: {
-        defaultOpacity: 60,
-    },
-    media: {
-        discord: ["https://thefluffnetwork.ru", "Наш дискорд сервер!"],
-    }
+    ws: 2000, // Websocket reconnect time
+    shake: 200,
+    notificationRemoved: 3000,
+    pixelInfo: 500,
+  },
+  cooldown: {
+    offset: 50,
+    staff: 50,
+  },
+  shakeAmount: 0.1,
+  zoom: {
+    defaultLevel: 0.25,
+    maxLevel: 3,
+    minLevelPx: 5,
+  },
+  discord: {
+    clientId: (import.meta.env.DISCORD_BOT_ID as string)!,
+    redirectUri: (import.meta.env.DISCORD_BOT_REDIRECT as string)!,
+    scope: ["identify", "email"],
+  },
+  hover: {
+    outlineSize: 0.1,
+    scale: 1.2,
+  },
+  url: {
+    api: (import.meta.env.BACKEND as string)!,
+  },
+  snow: {
+    size: 2,
+    amount: 100,
+  },
+  overlay: {
+    defaultOpacity: 60,
+  },
+  media: {
+    discord: ["https://thefluffnetwork.ru", "Наш дискорд сервер!"],
+  },
 }

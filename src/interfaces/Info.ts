@@ -1,6 +1,6 @@
 export interface ApiInfo {
-    name: string;
-    ended: boolean;
-    cooldown: number;
-    online: number;
+  name: string
+  ended: boolean
+  cooldown: number
+  online: number
 }

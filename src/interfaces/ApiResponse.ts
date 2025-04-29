@@ -1,8 +1,8 @@
 export interface ApiResponse {
-    error: boolean;
-    reason: string;
+  error: boolean
+  reason: string
 }
 
-export interface ApiErrorResponse extends ApiResponse{
-    error: true;
+export interface ApiErrorResponse extends ApiResponse {
+  error: true
 }

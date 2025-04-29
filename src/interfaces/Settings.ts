@@ -1,3 +1,3 @@
 export interface Settings {
-    enableSnow: boolean,
+  enableSnow: boolean
 }

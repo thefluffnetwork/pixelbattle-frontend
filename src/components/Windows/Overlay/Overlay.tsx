@@ -1,21 +1,19 @@
-import { useContext, useEffect } from "preact/hooks";
-import { ImageSelect } from "../../Overlay/ImageSelect/ImageSelect";
-import { WindowBox } from "../../WindowBox/WindowBox";
-import { OverlayContext } from "../../../managers/overlay";
-import { OverlayTransform } from "../../Overlay/OverlayTransform/OverlayTransform";
+import { useContext, useEffect } from "preact/hooks"
+import { OverlayContext } from "../../../managers/overlay"
+import { ImageSelect } from "../../Overlay/ImageSelect/ImageSelect"
+import { OverlayTransform } from "../../Overlay/OverlayTransform/OverlayTransform"
+import { WindowBox } from "../../WindowBox/WindowBox"
 
 export function Overlay() {
-    const overlay = useContext(OverlayContext)
+  const overlay = useContext(OverlayContext)
 
-    useEffect(() => {
-        overlay.load()
-    }, [])
+  useEffect(() => {
+    overlay.load()
+  }, [])
 
-    return <WindowBox title="Изображение">
-        {
-            overlay.isSet.value
-                ? <OverlayTransform />
-                : <ImageSelect />
-        }
+  return (
+    <WindowBox title="Изображение">
+      {overlay.isSet.value ? <OverlayTransform /> : <ImageSelect />}
     </WindowBox>
+  )
 }

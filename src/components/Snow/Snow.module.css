@@ -1,10 +1,9 @@
 .snow {
-    /* width: 100vw;
+  /* width: 100vw;
     height: 100vh; */
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    filter: blur(1px);
-
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  filter: blur(1px);
 }

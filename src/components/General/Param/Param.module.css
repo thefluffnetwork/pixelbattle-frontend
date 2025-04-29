@@ -1,14 +1,14 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .label {
-    color: var(--grey-text);
+  color: var(--grey-text);
 }
 
 .value {
-    font-size: 18px;
-    font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }

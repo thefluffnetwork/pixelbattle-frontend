@@ -1,14 +1,10 @@
-import styles from "./PaletteGroup.module.css";
-import { ComponentChildren } from "preact";
+import type { ComponentChildren } from "preact"
+import styles from "./PaletteGroup.module.css"
 
 interface PaletteGroupProps {
-    children: ComponentChildren
+  children: ComponentChildren
 }
 
 export function PaletteGroup({ children }: PaletteGroupProps) {
-    return (
-        <div className={styles.group}>
-            {children}
-        </div>
-    )
+  return <div className={styles.group}>{children}</div>
 }
