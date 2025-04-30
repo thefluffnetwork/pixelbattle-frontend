@@ -10,4 +10,8 @@ export interface EndedMessageData {
   value: boolean
 }
 
-export type MessageData = PlaceMessageData | EndedMessageData
+export interface ResetMessageData {
+  op: "RESET"
+}
+
+export type MessageData = PlaceMessageData | EndedMessageData | ResetMessageData

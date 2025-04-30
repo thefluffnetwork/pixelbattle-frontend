@@ -51,9 +51,12 @@ export class AppWebSocket {
         if (data.value) InfoManager.end()
         else InfoManager.start()
         break
+
+      case "RESET":
+        PlaceManager.fetch().then(() => PlaceManager.container.value.update())
+        break
     }
   }
-
   private onOpen(event: Event) {}
 
   private reconnect() {
