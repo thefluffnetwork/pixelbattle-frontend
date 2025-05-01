@@ -53,7 +53,7 @@ export class AppWebSocket {
         break
 
       case "RESET":
-        PlaceManager.fetch().then(() => PlaceManager.container.value.update())
+        location.reload()
         break
     }
   }
