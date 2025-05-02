@@ -30,9 +30,9 @@ export function ClosedTagCreate() {
 
   return (
     <div className={styles.form}>
-      <Button onClick={openTagCreate}>Новый тег</Button>
+      {/* <Button onClick={openTagCreate}>Новый тег</Button> */}
       <Button onClick={deleteTag} type="danger">
-        Убрать текущий
+        Убрать текущий тег
       </Button>
     </div>
   )
