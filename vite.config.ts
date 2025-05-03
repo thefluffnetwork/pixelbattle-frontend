@@ -10,7 +10,13 @@ export default defineConfig({
     preact(),
     VitePWA({
       workbox: {
-        navigateFallbackDenylist: [/^\/api/]
+        navigateFallbackDenylist: [/^\/api/],
+        runtimeCaching: [
+          {
+            urlPattern: ({url}) => url.pathname.startsWith("/api"),
+            handler: "NetworkOnly"
+          }
+        ]
       },
       registerType: "autoUpdate",
       manifest: {
