@@ -16,6 +16,9 @@ export class AppWebSocket {
   }
 
   private createWebSocket() {
+    if (this.ws) {
+      this.ws.close()
+    }
     this.ws = new WebSocket(
       config.url.api.replace("http", "ws") + "/pixels/socket",
     )
@@ -60,13 +63,11 @@ export class AppWebSocket {
   private onOpen(event: Event) {}
 
   private reconnect() {
-    PlaceManager.fetch()
-      .then(() => PlaceManager.container.value.update())
-      .then(() => this.connect())
+    this.connect()
   }
 
   private onClose(event: CloseEvent) {
-    setTimeout(this.reconnect.bind(this), config.time.ws)
+    this.reconnect()
   }
 
   private onError(event: Event) {
