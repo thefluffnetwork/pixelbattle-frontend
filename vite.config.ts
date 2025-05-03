@@ -1,5 +1,5 @@
-import { resolve } from "path"
 import preact from "@preact/preset-vite"
+import { resolve } from "node:path"
 import { defineConfig } from "vite"
 import { VitePWA } from "vite-plugin-pwa"
 import { runtimeEnv } from "vite-plugin-runtime"
@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [
     preact(),
     VitePWA({
+      disable: true,
       registerType: "autoUpdate",
       manifest: {
         name: "Pixel Battle by Pixelate It!",
