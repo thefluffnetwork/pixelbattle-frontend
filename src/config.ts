@@ -21,8 +21,8 @@ export const config = {
   },
   time: {
     update: {
-      tags: 30000,
-      info: 30000,
+      tags: 1000,
+      info: 1000,
     },
     ws: 2000, // Websocket reconnect time
     shake: 200,
