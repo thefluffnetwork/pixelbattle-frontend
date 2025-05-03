@@ -10,6 +10,7 @@ export default defineConfig({
     preact(),
     VitePWA({
       workbox: {
+        navigateFallback: '/',
         navigateFallbackDenylist: [/^\/api/],
         runtimeCaching: [
           {
