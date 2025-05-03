@@ -9,7 +9,9 @@ export default defineConfig({
   plugins: [
     preact(),
     VitePWA({
-      disable: true,
+      workbox: {
+        navigateFallbackDenylist: [/^\/api/]
+      },
       registerType: "autoUpdate",
       manifest: {
         name: "Pixel Battle by Pixelate It!",
