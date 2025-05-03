@@ -8,9 +8,7 @@ interface CookieMap {
 }
 
 export class AppCookie {
-  static readonly url =
-    (config.url.api.split("//")[1].includes(":") ? "" : ".") +
-    config.url.api.split("//").at(-1).split(".").slice(1).join(".") // so that it works both on localhost and in production
+  static readonly url = `.${window.location.host}`
 
   public static get<K extends keyof CookieMap>(
     key: K,
